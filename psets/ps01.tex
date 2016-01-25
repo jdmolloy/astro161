@@ -1,0 +1,45 @@
+\documentclass[12pt,preprint]{aastex}
+\usepackage[margin=1in]{geometry}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+
+\def\Mpc{\mathrm{Mpc}}
+\def\pc{\mathrm{pc}}
+\def\Rsol{\mathrm{R_\odot}}
+\def\Lsol{\mathrm{L_\odot}}
+
+\title{Problem Set 1}
+\begin{document}
+\maketitle
+\centerline{Astro C161} 
+
+\centerline{Due Friday, January 29, 4:00 pm}
+
+\begin{enumerate}
+\setcounter{enumi}{-1}
+
+\item \textbf{TALC} \textit{(5 pts)}: Come to your assigned section of TALC. There will be a quiz/worksheet to record your attendance.
+
+\item \textbf{Olber's Paradox} \textit{(38 pts)}: 
+	\begin{enumerate}
+	\item Suppose you are in an infinitely large, infinitely old universe in which the average density of stars is $n_* = 10^9 \ \Mpc^{-3}$, and the average stellar radius is equal to the Sun's radius: $R_* = \Rsol = 7 \times 10^8$ m. How far, on average, could you see in any direction before your line of sight struck a star? (Assume standard Euclidean geometry holds true in this universe.) If the stars are clumped into galaxies with a density $n_g = 1\ \Mpc^{-3}$ and average radius $R_g = 2000\ \pc$, how far, on average, could you see in any direction before your line of sight hit a galaxy?
+	\item If the total luminosity density of the local Universe is $j_0 = 1.2 \times 10^8\ \Lsol\ \Mpc^{-3}$, compute the total flux $F_{gal}$ received at the Earth from all of the external galaxies in the Universe. Assume for this problem that the Universe is 14 billion years old and ignore the contribution from stars in the Milky Way. Express your answer in $\mathrm{J s^{-1} m^{-2}}$ and compare it to the flux at Earth from the Sun. Note that $\Lsol = 3.8 \times 10^{26}\  \mathrm{W}$. Also, ignore any potential cosmological complications you can think of here, e.g. redshift, galaxy evolution, etc.
+	\end{enumerate}
+
+\item \textbf{Tired Light} \textit{(19 pts)}: A hypothesis once used to explain the Hubble relation is the ``tired light hypothesis''. The tired light hypothesis states that the universe is not expanding, but that photons simply lose energy as they move through space (by some unexplained means), with the energy loss per unit distance being given by the law 
+$$ \frac{d E}{d r} = - K E, $$
+where $K$ is a constant. Show that this hypothesis gives a distance-redshift relation that is linear in the limit $z \ll 1$. What must the value of $K$ be in order to yield a Hubble constant of $H_0 = 70\ \mathrm{km\ s^{-1}\ Mpc^{-1}}$?
+
+\pagebreak
+\item \textbf{Geometry on a Sphere} \textit{(38 pts)}: 
+	\begin{enumerate}
+	\item Suppose you are a two-dimensional being, living on the surface of a sphere with radius $R$. An object of width $ds \ll R$ is at a distance $r$ from you (remember, all distances are measured on the surface of the sphere). What angular width $d\theta$ will you measure for the object? Explain the behavior of $d\theta$ as $r \rightarrow \pi R$. 
+	\item Suppose you are \textit{still} a two-dimensional being, living on the same sphere of radius $R$. Show that if you draw a circle of radius $r$, the circle's circumference will be 
+	$$ C = 2\pi R \sin(r/R). $$
+	Idealize the Earth as a perfect sphere of radius $R = 6371$ km. If you could measure distances with an error of $\pm 1$ m, how large a circle would you have to draw on the Earth's surface to convince yourself that the Earth is spherical rather than flat? \textit{Hint:} You can Taylor expand $\sin(r/R)$ once you have a condition for it, as your circle is much smaller than the size of the sphere. 
+	\end{enumerate}
+
+\end{enumerate}
+
+\end{document}  
