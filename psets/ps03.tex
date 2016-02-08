@@ -1,0 +1,87 @@
+\documentclass[12pt,preprint]{aastex}
+\usepackage[margin=1in]{geometry}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref} % for \url, etc
+\usepackage{subfigure}
+\usepackage{placeins} % for \FloatBarrier
+
+\def\Mpc{\mathrm{Mpc}}
+\def\W{\mathrm{W}}
+\def\e{\mathrm{e}}
+\def\h{\mathrm{h}}
+\def\pc{\mathrm{pc}}
+\def\kpc{\mathrm{kpc}}
+\def\m{\mathrm{m}}
+\def\km{\mathrm{km}}
+\def\s{\mathrm{s}}
+
+\def\Rsol{\mathrm{R_\odot}}
+\def\Lsol{\mathrm{L_\odot}}
+\def\Fsol{\mathrm{F_\odot}}
+\def\Dearth{\mathrm{D_\oplus}}
+\def\Rearth{\mathrm{R_\oplus}}
+
+\def\mfp{d_{\mathrm{mfp}}}
+\def\WA{Wolfram\textbar Alpha }
+\newcommand\sn[2]{#1 \times 10^{#2}}
+
+
+\title{Problem Set 3}
+\begin{document}
+\maketitle
+\centerline{Astro C161} 
+
+\centerline{Due Friday, February 12, 4:00 pm}
+
+\begin{enumerate}
+\setcounter{enumi}{-1}
+
+\item \textbf{TALC} \textit{(5 pts)}: Come to your assigned section of TALC. There will be a quiz/worksheet to record your attendance.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Proper Distance} \textit{(24pts)}: 
+	\begin{enumerate}
+	\item In a flat universe with $H_0 = 70\ \km~\s^{-1} \Mpc^{-1}$, you observe a galaxy at a redshift $z=7$. What is the current proper distance to the galaxy, $d_p(t_0)$, if the universe contains only radiation? Repeat for universes with only matter and only a cosmological constant. (Note: Assume you measure the distance to the galaxy using light that was emitted at some time $t_1$ and arrived at time $t_0$.)
+	\item What was the proper distance at the time the light from part (a) was emitted, $d_p(t_1)$, if the universe contains only radiation? Repeat for universes with only matter and only a cosmological constant. (Note: Assume you measure the distance to the galaxy using light that was emitted at some time $t_2$ and arrived at time $t_1$.)
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Elbbuh Niwde} \textit{(23pts)}: Consider a positively curved universe containing only matter (the ``Big Crunch'' model). At some time $t_0 > t_{\mathrm{Crunch}}/2$, during the contraction phase of this universe, an astronomer named Elbbuh Niwde discovers that nearby galaxies have blueshifts ($-1 \leq z < 0$) proportional to their distance. She then measures $H_0$ and $\Omega_0$, finding $H_0 < 0$ and $\Omega_0 > 1$. Given $H_0$ and $\Omega_0$, how long a time will elapse between Dr. Niwde's observations at $t=t_0$ and the final Big Crunch at $t=t_{\mathrm{Crunch}}$? What is the minimum blueshift that Dr. Niwde is able to observe? What is the lookback time to an object with this blueshift?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% From: http://universeinproblems.com/index.php/Friedman_equations Problems 21, 24, 22
+\item \textbf{Equation of State} \textit{(21pts)}: 
+	\begin{enumerate}
+	\item The state parameter $w$ Express the state parameter $w=P/\epsilon$ in terms of the Hubble parameter and its time derivative.
+	\item Evaluate the derivative of $w$ with respect to time. Express your answer in terms of the speed of sound in the medium, which is given by $c_s^2 = c^2 \frac{dP}{d\epsilon}$. The speed of sound is determined by the medium's compressibility and density. 
+	\item Show that for a spatially flat universe, the Friedman equation and the fluid equation are invariant under the transformation:
+	$$\begin{cases}
+	a \rightarrow \alpha = \frac{1}{a} \\ 
+	(w+1) \rightarrow (u + 1) = -(w+1) \\
+	\end{cases}$$
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Angular Diameter Distance} \textit{(27pts)}: 
+	\begin{enumerate} 
+	\item The {\it angular diameter distance} $d_A$ is defined to be $d_A=D/\theta$, where $D$ is the physical size of an object and $\theta$ is its angular diameter (i.e. the angle subtended in the sky).  Explain why $d_A$ is related to the comoving radial distance $r$ by $ d_A = r/(1+z)$.
+	\item For an object of physical size $D$ at redshift $z$, write down a general expression for its angular diameter as a function of $D$, $z$, $\Omega_{0,m}$, and $H_0$ (assume $\Omega_\Lambda=0$ for simplicity). Rewrite the formula so that the angular diameter is in units of $h$ arcsec (where $H_0=100\,h$ km/s/Mpc) and $D$ in units of kpc.
+	\item The physical size of the luminous part of a Milky-Way-like galaxy is about 20 kpc.  On log-log scales, plot the angular diameter of such a galaxy versus redshift ($0.01 \le z \le 10$) for three values of $\Omega_{0,m}$: 0.27, 1, and 2.7.  Comment on any interesting features in your curves.  (Again assume $\Omega_\Lambda=0$.)
+	\end{enumerate}
+
+
+%\item \textbf{Standard Candles} \textit{(??pts)}: A spatially flat universe contains a single component with equation of state parameter $w$. In this universe, standard candles of luminosity $L$ are distributed homogeneously in space. The number density of the standard candles is $n_0$ at $t=t_0$, and the standard candles are neither created nor destroyed. 
+%	\begin{enumerate}
+%	\item Show that the observed flux from a single standard candle at redshift $z$ is 
+%	$$f(z) = \frac{L(1+3w)^2}{16\pi(c/H_0)^2} \frac{1}{(1+z)^2} \left [1-(1+z)^{-(1+3w)/2} \right ]^{-2}$$
+%	when $w \ne -1/3$. What is the corresponding relation when $w = -1/3$?
+%	\item Show that the observed intensity (that is, the power per unit area per steradian of the sky) from standard candles with redshifts in the range $z \rightarrow z+dz$ is
+%	$$dJ(z) = \frac{n_0 L(c/H_0)}{4 \pi} (1+z)^{-(7+3w)/2} dz$$
+%	What will be the total intensity $J$ of all standard candles integrated over all redshifts? Explain why the night sky is of finite brightness even in universes with $w \leq -1/3$, which have an infinite horizon distance. 
+%	\end{enumerate}
+
+\end{enumerate}
+
+\end{document}  
