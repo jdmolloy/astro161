@@ -1,0 +1,95 @@
+\documentclass[12pt,preprint]{aastex}
+\usepackage[margin=1in]{geometry}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+
+
+\def\Mpc{\mathrm{Mpc}}
+\def\pc{\mathrm{pc}}
+\def\Rsol{\mathrm{R_\odot}}
+\def\Lsol{\mathrm{L_\odot}}
+
+\renewcommand{\baselinestretch}{1.1}
+\newcommand{\bqu}{\begin{quote}}
+	\newcommand{\equ}{\end{quote}}
+\newcommand{\br}{\langle}
+\newcommand{\ke}{\rangle}
+\def\f#1#2{\frac{#1}{#2}}
+
+\def\ni{\noindent}
+\def\J{{\rm\,J}}
+\def\W{{\rm\,W}}
+\def\s{{\rm\,s}}
+\def\erg{{\rm\,erg}}
+\def\cm{{\rm\,cm}}
+\def\m{{\rm\,m}}
+\def\km{{\rm\,km}}
+\def\kg{{\rm\,kg}}
+\def\mm{{\rm\,mm}}
+\def\gm{{\rm\,g}}
+\def\g{{\rm\,g}}
+\def\d{\rm\,d}
+\def\h{\rm\,h}
+\def\mum{\,\mu{\rm m}}
+\def\K{{\rm\,K}}
+\def\yr{{\rm\,yr}}
+\def\Hz{{\rm\,Hz}}
+\def\days{{\rm\,days}}
+\def\cals{{\rm\,cals}}
+\def\mole{{\rm\,mole}}
+\def\gal{{\rm\,gal}}
+\def\calo{\,{\rm calorie}}
+\def\dyne{\,{\rm dyne}}
+\def\s{\,{\rm s}}
+\def\at{\, {\rm atmosphere}}
+\def\J{\,{\rm joule}}
+\def\pomega{\tilde{\omega}}
+\def\vs{\vspace{0.1in}}
+\def\n{\vspace{0.1in} \ni }
+
+
+\title{Problem Set 4}
+\begin{document}
+\maketitle
+\centerline{Astro C161} 
+
+\centerline{Due Friday, February 19, 4:00 pm}
+
+\begin{enumerate}
+\setcounter{enumi}{-1}
+
+\item \textbf{TALC} \textit{(5 pts)}: Come your TALC section. There will be a sign-up sheet to record your attendance.
+
+\item \textbf{Standard Candles} \textit{(25 pts)}: A spatially flat universe contains a single component with equation of state parameter $w$. In this universe, standard candles of luminosity $L$ are distributed homogeneously in space. The number density of the standard candles is $n_0$ at $t=t_0$, and the standard candles are neither created nor destroyed. 
+\begin{enumerate}
+	\item Show that the observed flux from a single standard candle at redshift $z$ is 
+	$$f(z) = \frac{L(1+3w)^2}{16\pi(c/H_0)^2} \frac{1}{(1+z)^2} \left [1-(1+z)^{-(1+3w)/2} \right ]^{-2}$$
+	when $w \ne -1/3$. What is the corresponding relation when $w = -1/3$?
+	
+	\item Show that the observed intensity (that is, the power per unit area per steradian of the sky) from standard candles with redshifts in the range $z \rightarrow z+dz$ is
+	$$dJ(z) = \frac{n_0 L(c/H_0)}{4 \pi} (1+z)^{-(7+3w)/2} dz$$
+	What will be the total intensity $J$ of all standard candles integrated over all redshifts? Explain why the night sky is of finite brightness even in universes with $w \leq -1/3$, which have an infinite horizon distance. 
+\end{enumerate}
+
+\item \textbf{A Lambda-Dominated Universe} \textit{(36 pts)}: Consider a spatially Flat ($\kappa = 0$) universe with $\Omega_{\Lambda} = 1$. 
+\begin{enumerate}
+	\item Show that the solution to the Friedmann equation is $a(t) = e^{H_0(t-t_0)} $.
+	
+	\item What is the lookback time (in terms of $H_0$ and $t_0$) at redshift $z = 1$?
+	
+	\item What is the physical separation in Mpc of two objects separated by $\theta = 0.01$ radians at $z = 1$?
+	
+	\item If you could find an object of the same size as that in (c) at \textit{every} redshift, which one would appear smallest on the sky?
+	
+	\item Consider a photon emitted today (at $t_0$). What comoving distance $r$ has it traveled to by time $t_f >t _0$?
+	
+	\item Suppose that this model is a good description of our universe. If a supernova goes off in our galaxy today, will an observer in a galaxy that is presently 6000 Mpc away from us (in terms of proper distance) ever be able to see it? (Assume that, as in our universe $c/H_0 \approx 4300\; \mathrm{Mpc}$.)
+\end{enumerate}
+
+\item \textbf{Gamow's Prediction} \textit{(34 pts)}: 
+	Even though the CMB was actually discovered in the 1960s, George Gamow predicted its existence in 1948. Try to re create his argument with the following information. Gamow knew that nucleosynthesis must have taken place at a temperature $T_{nuc} \approx 10^9 K$ and that the age of the universe is currently $t_0 \approx 10\; \mathrm{Gyr} $.
+	
+	Assume that the universe is flat and contains only radiation. With these assumptions, what was the energy density $\epsilon$ at the time of nucleosynthesis? What was the Hubble parameter at the time of nucleosynthesis? What was the time $t_{nuc}$ at which nucleosynthesis took place? What is the current temperature $T_0$ of the radiation filling the universe today? If the universe switched from being radiation-dominated to being matter-dominated at a redshift $z_{rm} > 0$, will this increase or decrease $T_0$ for fixed values of $T_{nuc}$ and $t_0$? Justify your answer.
+\end{enumerate}
+
+\end{document}  
