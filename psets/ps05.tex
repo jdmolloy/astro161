@@ -1,0 +1,74 @@
+\documentclass[12pt,preprint]{aastex}
+\usepackage[margin=1in]{geometry}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{hyperref} % for \url, etc
+\usepackage{subfigure}
+\usepackage{placeins} % for \FloatBarrier
+
+% units
+\def\Mpc{\mathrm{Mpc}}
+\def\W{\mathrm{W}}
+\def\K{\mathrm{K}}
+\def\e{\mathrm{e}}
+\def\h{\mathrm{h}}
+\def\pc{\mathrm{pc}}
+\def\kpc{\mathrm{kpc}}
+\def\m{\mathrm{m}}
+\def\km{\mathrm{km}}
+\def\s{\mathrm{s}}
+\def\MeV{\mathrm{MeV}}
+
+% astro constants
+\def\Msol{\mathrm{M_\odot}}
+\def\Rsol{\mathrm{R_\odot}}
+\def\Lsol{\mathrm{L_\odot}}
+\def\Fsol{\mathrm{F_\odot}}
+\def\Dearth{\mathrm{D_\oplus}}
+\def\Rearth{\mathrm{R_\oplus}}
+
+% miscellaneous 
+\def\mfp{d_{\mathrm{mfp}}}
+\def\WA{Wolfram\textbar Alpha }
+\newcommand\sn[2]{#1 \times 10^{#2}}
+\def\rs{R_s}
+\def\Ymax{Y_{\mathrm{max}}}
+\def\He{^4\mathrm{He}}
+\def\tnuc{t_{\mathrm{nuc}}}
+
+\title{Problem Set 5}
+\begin{document}
+\maketitle
+\centerline{Astro C161} 
+
+\centerline{Due Friday, February 26, 4:00 pm}
+
+\begin{enumerate}
+\setcounter{enumi}{-1}
+
+\item \textbf{TALC} \textit{(5 pts)}: Come to your assigned section of TALC. There will be a quiz/worksheet to record your attendance.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Gravitational Waves} \textit{(50pts)}: 
+	On February $11^{\mathrm{th}}$, LIGO announced the detection of a merger of two black holes, one of mass $\sim 29\Msol$ and the other about $\sim 36\Msol$. In class, we showed how we could use the Larmor formula to estimate the power radiated in the merger. In this problem, we will use this same method to derive the furthest distance at which LIGO could observe the merger of two supermassive black holes, each of mass $10^6 \Msol$. 
+	\begin{enumerate}
+	\item Let $\rs$ be the Schwarzschild of the merged BH. Suppose the two original BHs were $3\rs$ apart before the merger began. How much energy is released as they merge (i.e. go from $3\rs$ separation to $1\rs$ separation)? Note that the Schwarzschild radius of a BH of mass $M$ is $r_s = \frac{2GM}{c^2}$. \textit{Hint: Use the Virial Theorem}
+	\item Find $\Delta t$, the length of time it takes the merger to occur. \textit{Hint: First use the Larmor formula to find the power emitted by the merger.}
+	\item What is the luminosity of this event? Find the luminosity distance, given that we live in a flat universe.
+	\item LIGO measures gravitational strain $h \equiv \frac{2\Delta r}{r}$ where $r$ is the radius of a circle being deformed. Given the sensitivity of LIGO, which measures $1/1000$ of a proton radius ($\sn{1.5}{-21}\m$) at a distance of $4\km$, what is the furthest distance at which LIGO could detect such an event? \textit{Hint: Gravitational strain is proportional to the tangential pull near the object (say, $\sim 2\rs$) divided by the total pull and falls linearly with distance.}
+	\end{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\item \textbf{Alternate Nucleosynthesis} \textit{(45pts)}: 
+	As derived in Section 10.2 of Ryden, the maximum possible mass fraction of $\He$ is $\Ymax = \frac{2f}{1+f}$, where $f(t) = \frac{n_n}{n_p}$ is the ratio of the number densities of protons and neutrons at time $t$ and $\tnuc$ is the time of nucleosynthesis.  
+	\begin{enumerate}
+	\item Explain how freeze-out, when neutrinos decouple from the neutrons and protons, effects the neutron-to-proton ratio. Estimate $\Ymax$ ignoring neutron decay. Show your work in deriving $f$ from the Maxwell-Boltzmann equation. You may use $T_{\mathrm{freeze}} = \sn{9}{9} \K$ for the temperature of ``freeze-out'' and $Q_n = (m_n - m_p)c^2 = 1.29 \MeV$ for the difference between neutron and proton rest energy.
+	\item Suppose the difference in rest energy of the neutron and proton were $Q_n = 0.129 \MeV$ instead of $Q_n = 1.29 \MeV$. Estimate $\Ymax$ assuming that all available neutrons are incorporated into $\He$ nuclei. Do NOT ignore neutron decay -- use the decay time $\tau_n = 890\s$. 
+	\item Suppose the neutron decay time were $\tau_n = 89 \s$ instead of $\tau_n = 890 \s$, with all other physical parameters unchanged. Estimate $\Ymax$ assuming that all available neutrons are incorporated into $\He$ nuclei. \textit{Hint: If neutron decay begins dominating at time $t=0$, then after that time $f(t) \approx \frac{f(0) e^{-t/\tau_n}}{1+f(0)[1-e^{-t/\tau_n}]}$.}
+	\end{enumerate}
+
+
+\end{enumerate}
+
+\end{document}  
